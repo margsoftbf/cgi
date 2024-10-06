@@ -20,7 +20,7 @@ const OurAdvantages = () => {
 								<img
 									src={roundImage}
 									alt='Round Shape'
-									className='absolute top-0 -left-32 w-full h-full object-cover z-10'
+									className='absolute top-0 opacity-95 -left-40 w-full h-full object-cover z-10'
 								/>
 								<div className='absolute -top-[60%] left-[20%] w-full h-full bg-white opacity-20 rounded-full'></div>
 							</div>
