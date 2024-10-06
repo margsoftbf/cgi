@@ -48,8 +48,8 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-third'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-xl font-medium'>Elastyczne pakiety</h6>
-									<p className='text-gray-600 tracking-wider'>
+									<h6 className='text-2xl font-medium'>Elastyczne pakiety</h6>
+									<p className='text-gray-600 font-lato'>
 										Nasze pakiety są wystarczająco elastyczne, aby dostosować je
 										do Twoich potrzeb, zapewniając pełną satysfakcję.
 									</p>
@@ -61,10 +61,10 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-third'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-xl font-medium'>
+									<h6 className='text-2xl font-medium'>
 										Brak ukrytych zobowiązań
 									</h6>
-									<p className='text-gray-600 tracking-wider'>
+									<p className='text-gray-600 font-lato'>
 										Z nami nie musisz martwić się o ukryte koszty czy
 										przedłużanie umów — dbamy o pełną przejrzystość.
 									</p>
@@ -76,8 +76,8 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-third'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-xl font-medium'>Współpraca</h6>
-									<p className='text-gray-600 tracking-wider'>
+									<h6 className='text-2xl font-medium'>Współpraca</h6>
+									<p className='text-gray-600 font-lato'>
 										Skuteczność osiągamy tylko wtedy, gdy wspólnie się rozumiemy
 										i dążymy do realizacji naszych wspólnych celów.
 									</p>
