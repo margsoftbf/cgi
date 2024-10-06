@@ -114,7 +114,7 @@ const Slider3 = () => {
 												</motion.h1>
 
 												<motion.p
-													className='text-lg lg:text-4xl font-semibold uppercase max-w-[600px]'
+													className='text-lg lg:text-3xl font-semibold uppercase max-w-[600px]'
 													variants={textVariants}
 													initial='initial'
 													animate='animate'
