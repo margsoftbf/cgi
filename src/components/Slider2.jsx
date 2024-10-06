@@ -136,26 +136,6 @@ const Slider2 = () => {
 							transition={{ duration: 1.8 }}
 						/>
 					</motion.div>
-					{/* <motion.div
-						key={`shape-background-${activeSlide}`}
-						className='absolute bg-secondary rounded-md w-full h-48 lg:h-full'
-						variants={imageVariants}
-						initial='initial'
-						animate='animate'
-						exit='exit'
-						transition={{ duration: 1.2 }}
-					/>
-					<motion.img
-						key={activeSlide}
-						src={slides[activeSlide].image}
-						alt='Slide'
-						className='w-full h-40 lg:h-48 2xl:h-52 rounded-lg object-cover '
-						variants={imageVariants}
-						initial='initial'
-						animate='animate'
-						exit='exit'
-						transition={{ duration: 1.8 }}
-					/> */}
 				</div>
 			</div>
 		</section>
