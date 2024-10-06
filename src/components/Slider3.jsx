@@ -101,9 +101,9 @@ const Slider3 = () => {
 									>
 										<div className='absolute h-full w-full bg-black/40'></div>
 										<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 font-teko'>
-											<div className='text-left lg:text-left text-white space-y-4 lg:space-y-8 relative z-10 p-4'>
+											<div className='text-left lg:text-left text-white space-y-4 lg:space-y-8 relative z-10 p-4 mt-20'>
 												<motion.h1
-													className='text-4xl lg:text-8xl font-bold uppercase z-50'
+													className='text-4xl lg:text-5xl font-bold uppercase z-50'
 													variants={textVariants}
 													initial='initial'
 													animate='animate'
@@ -113,7 +113,6 @@ const Slider3 = () => {
 													{slide.title}
 												</motion.h1>
 
-												{/* Subtitle */}
 												<motion.p
 													className='text-lg lg:text-4xl font-semibold uppercase max-w-[600px]'
 													variants={textVariants}
@@ -124,7 +123,6 @@ const Slider3 = () => {
 												>
 													{slide.subtitle}
 												</motion.p>
-
 
 												<motion.a
 													href='about.html'
@@ -149,11 +147,10 @@ const Slider3 = () => {
 					)}
 				</AnimatePresence>
 
-				{/* Adjusted shapes with lower z-index */}
 				<motion.img
 					src={leftCurveLine}
 					alt='Left Curve Line'
-					className='absolute top-0 left-0 w-32 2xl:w-80 h-[250px] 2xl:h-[550px] z-0'
+					className='hidden md:block absolute top-0 left-0 w-32 2xl:w-80 h-[250px] 2xl:h-[550px] z-0'
 					variants={shapeVariants}
 					initial='initial'
 					animate='animate'

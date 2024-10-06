@@ -116,10 +116,10 @@ const Slider1 = () => {
 										transition={{ duration: 0.5, delay: 0.2 }}
 										className='absolute bottom-0 right-0 w-48 h-48 bg-third rounded-full translate-x-1/4 translate-y-1/4'
 									/>
-									<h1 className='text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 md:mt-8 leading-tight tracking-tight relative z-10'>
+									<h1 className='text-4xl lg:text-4xl xl:text-5xl font-extrabold mb-4 md:mb-6 md:mt-8 leading-tight tracking-tight relative z-10'>
 										{slide.title}
 									</h1>
-									<p className='text-base md:text-lg lg:text-xl mb-4 md:mb-6 lg:mb-8 tracking-wide leading-relaxed relative z-10'>
+									<p className='text-base lg:text-lg xl:text-xl mb-4 md:mb-6 lg:mb-8 tracking-wide leading-relaxed relative z-10'>
 										{slide.subtitle}
 									</p>
 									<motion.button

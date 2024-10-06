@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/logo-garski.webp';
 
-const Navbar = ({onSliderChange}) => {
+const Navbar = ({ onSliderChange }) => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	useEffect(() => {
@@ -26,8 +26,13 @@ const Navbar = ({onSliderChange}) => {
 		};
 	}, []);
 
-	const toggleMobileMenu = ({ onSliderChange }) => {
+	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
+	};
+
+	const handleSliderChangeMobile = (sliderName) => {
+		onSliderChange(sliderName);
+		toggleMobileMenu(); 
 	};
 
 	return (
@@ -72,7 +77,7 @@ const Navbar = ({onSliderChange}) => {
 								<a
 									href='#home'
 									className='text-four hover:text-third transition-all duration-300'
-									onClick={toggleMobileMenu}
+									onClick={() => handleSliderChangeMobile('slider1')}
 								>
 									Home
 								</a>
@@ -81,7 +86,7 @@ const Navbar = ({onSliderChange}) => {
 								<a
 									href='#about'
 									className='text-four hover:text-third transition-all duration-300'
-									onClick={toggleMobileMenu}
+									onClick={() => handleSliderChangeMobile('slider2')}
 								>
 									O firmie
 								</a>
@@ -90,7 +95,7 @@ const Navbar = ({onSliderChange}) => {
 								<a
 									href='#experience'
 									className='text-four hover:text-third transition-all duration-300'
-									onClick={toggleMobileMenu}
+									onClick={() => handleSliderChangeMobile('slider3')}
 								>
 									Oferta
 								</a>
@@ -99,7 +104,7 @@ const Navbar = ({onSliderChange}) => {
 								<a
 									href='#contact'
 									className='text-four hover:text-third transition-all duration-300'
-									onClick={toggleMobileMenu}
+									onClick={() => handleSliderChangeMobile('slider4')}
 								>
 									Kontakt
 								</a>
@@ -138,6 +143,7 @@ const Navbar = ({onSliderChange}) => {
 							</li>
 							<li>
 								<a
+									onClick={() => onSliderChange('slider4')}
 									href='#contact'
 									className='text-four hover:text-third transition-all duration-300'
 								>

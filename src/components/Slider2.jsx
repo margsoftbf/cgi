@@ -8,7 +8,6 @@ import zapewniamy from '../assets/zapewniamy.png';
 
 const Slider2 = () => {
 	const [activeSlide, setActiveSlide] = useState(0);
-	const [isTypewriterDone, setIsTypewriterDone] = useState(false);
 
 	const slides = [
 		{
@@ -68,8 +67,8 @@ const Slider2 = () => {
 	};
 
 	return (
-		<section className='pt-[90px] relative w-full h-[30vh] md:h-[40vh] max-h-[600px] min-h-[400px] flex items-center justify-between max-w-wrapper m-auto'>
-			<div className='w-full lg:w-1/2 px-8 lg:px-16 flex flex-col justify-center gap-4 h-full items-start text-left'>
+		<section className='py-6 pt-[90px] relative w-full h-full md:h-[40vh] max-h-[600px] min-h-[400px] flex flex-col md:flex-row md:order-1 items-center justify-between max-w-wrapper m-auto'>
+			<div className='w-full lg:w-1/2 px-8 lg:px-16 flex flex-col justify-center gap-0 md:gap-4 h-full items-center order-2'>
 				<motion.div
 					key={activeSlide}
 					variants={slideVariants}
@@ -78,7 +77,7 @@ const Slider2 = () => {
 					exit='exit'
 					transition={{ duration: 0.6 }}
 				>
-					<h1 className='text-third text-4xl lg:text-5xl font-semibold mb-4'>
+					<h1 className='text-third text-2xl md:text-4xl font-semibold mb-4'>
 						<Typewriter
 							options={{
 								strings: slides[activeSlide].title,
@@ -90,7 +89,7 @@ const Slider2 = () => {
 				</motion.div>
 
 				<motion.p
-					className='text-lg lg:text-xl text-gray-600 mb-8 tracking-wider'
+					className='text-md lg:text-xl text-gray-600 mb-8 tracking-wider'
 					key={`subtitle-${activeSlide}`}
 					variants={slideVariants}
 					initial='initial'
@@ -115,12 +114,12 @@ const Slider2 = () => {
 				</motion.div>
 			</div>
 
-			<div className='w-full lg:w-1/2 h-full relative p-8'>
+			<div className='order-1 md:order-2 w-full lg:w-1/2 h-full relative p-8 flex items-center justify-center'>
 				<motion.img
 					key={activeSlide}
 					src={slides[activeSlide].image}
 					alt='Slide'
-					className='w-full h-full object-contain'
+					className='w-48 h-48 lg:w-60 lg:h-60 object-contain'
 					variants={imageVariants}
 					initial='initial'
 					animate='animate'
