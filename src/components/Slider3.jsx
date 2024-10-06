@@ -103,7 +103,7 @@ const Slider3 = () => {
 										<div className='absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 font-teko'>
 											<div className='text-left lg:text-left text-white space-y-4 lg:space-y-8 relative z-10 p-4 mt-20'>
 												<motion.h1
-													className='text-4xl lg:text-5xl font-bold uppercase z-50'
+													className='text-4xl lg:text-6xl font-bold uppercase z-50'
 													variants={textVariants}
 													initial='initial'
 													animate='animate'
@@ -114,7 +114,7 @@ const Slider3 = () => {
 												</motion.h1>
 
 												<motion.p
-													className='text-lg lg:text-3xl font-semibold uppercase max-w-[600px]'
+													className='text-lg lg:text-2xl font-semibold uppercase max-w-[600px]'
 													variants={textVariants}
 													initial='initial'
 													animate='animate'
