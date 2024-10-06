@@ -66,7 +66,7 @@ const Slider2 = () => {
 	};
 
 	return (
-		<section className='py-6 pt-[90px] relative w-full h-full md:h-[40vh] max-h-[600px] min-h-[400px] flex flex-col md:flex-row md:order-1 items-center justify-between max-w-wrapper m-auto'>
+		<section className='py-6 pt-[90px] relative w-full h-full md:h-[40vh] max-h-[600px] min-h-[400px] flex flex-col sm:flex-row sm:order-1 items-center justify-between max-w-wrapper m-auto'>
 			<div className='w-full lg:w-1/2 px-8 lg:px-16 flex flex-col justify-center gap-0 md:gap-4 h-full items-center order-2'>
 				<motion.div
 					key={activeSlide}
@@ -113,37 +113,49 @@ const Slider2 = () => {
 				</motion.button>
 			</div>
 
-			<div className='order-1 md:order-2 w-full lg:w-1/2 h-full relative p-8 flex items-center justify-center'>
-				<motion.div
-					key={activeSlide}
-					className='absolute bg-white rounded-lg w-48 h-48 lg:w-96 lg:h-80'
-					variants={imageVariants}
-					initial='initial'
-					animate='animate'
-					exit='exit'
-					transition={{ duration: 1.8 }}
-				/>
-				<div className='order-1 md:order-2 w-full h-full relative p-8 flex items-center justify-center overflow-hidden'>
+			<div className='order-1 sm:order-2 w-full lg:w-1/2 h-full relative p-2 flex items-center justify-center'>
+				<div className='order-1 md:order-2 w-full h-48 lg:h-full relative flex items-center justify-center overflow-hidden '>
 					<motion.div
 						key={`shape-background-${activeSlide}`}
-						className='absolute bg-secondary rounded-md w-full h-full'
+						className='absolute bg-secondary rounded-md w-full h-48 lg:h-full p-4'
 						variants={imageVariants}
 						initial='initial'
 						animate='animate'
 						exit='exit'
-						transition={{ duration: 1.8 }}
-					/>
-					<motion.img
-						key={activeSlide}
-						src={slides[activeSlide].image}
-						alt='Slide'
-						className='w-48 h-48 lg:w-full lg:h-72 rounded-lg object-cover'
+						transition={{ duration: 1.2 }}
+					>
+						<motion.img
+							key={activeSlide}
+							src={slides[activeSlide].image}
+							alt='Slide'
+							className='w-full h-full rounded-lg object-cover '
+							variants={imageVariants}
+							initial='initial'
+							animate='animate'
+							exit='exit'
+							transition={{ duration: 1.8 }}
+						/>
+					</motion.div>
+					{/* <motion.div
+						key={`shape-background-${activeSlide}`}
+						className='absolute bg-secondary rounded-md w-full h-48 lg:h-full'
 						variants={imageVariants}
 						initial='initial'
 						animate='animate'
 						exit='exit'
 						transition={{ duration: 1.2 }}
 					/>
+					<motion.img
+						key={activeSlide}
+						src={slides[activeSlide].image}
+						alt='Slide'
+						className='w-full h-40 lg:h-48 2xl:h-52 rounded-lg object-cover '
+						variants={imageVariants}
+						initial='initial'
+						animate='animate'
+						exit='exit'
+						transition={{ duration: 1.8 }}
+					/> */}
 				</div>
 			</div>
 		</section>
