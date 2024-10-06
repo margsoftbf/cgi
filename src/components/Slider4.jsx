@@ -25,7 +25,7 @@ const Slider4 = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8 }}
 					>
-						Best Digital Marketing Agency
+						Pozyskujemy klientów hasło nasze
 					</motion.h1>
 					<motion.p
 						className='text-xl text-center lg:text-left md:text-2xl font-semibold uppercase tracking-wider'
@@ -33,8 +33,8 @@ const Slider4 = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, delay: 0.2 }}
 					>
-						We are committed to providing our customers with exceptional
-						service.
+						Nasza strategia marketingowa pozwala na pozyskanie najbardziej
+						wartościowych klientów dla Twojego biznesu.
 					</motion.p>
 					<motion.a
 						href='#about'
