@@ -4,7 +4,7 @@ import slide2Image from '../assets/K1.png';
 
 const About = () => {
 	return (
-		<section className='relative bg-primary py-16'>
+		<section className='relative bg-primary py-16 overflow-hidden'>
 			<div className='max-w-wrapper mx-auto'>
 				<div className='flex flex-col lg:flex-row justify-center'>
 					<div className='relative w-full xl:w-1/2 lg:w-full px-8 ml-2 sm:ml-32 lg:ml-2'>
@@ -47,7 +47,7 @@ const About = () => {
 						</p>
 
 						<div className='flex flex-row items-center space-x-5 relative'>
-							<ul className='list-none space-y-2 w-[75%] text-left'>
+							<ul className='list-none space-y-2 w-full md:w-[75%] text-left'>
 								<li className='flex items-start'>
 									<span className='text-third mr-2'>✔</span>
 									<span className='max-w-full break-words'>
@@ -71,11 +71,11 @@ const About = () => {
 								</li>
 							</ul>
 
-							<div className='relative flex items-center justify-center h-full'>
+							<div className='hidden relative md:flex items-center justify-center h-full'>
 								<div className='w-1.5 h-full bg-third rounded-t-full rounded-b-full'></div>
 							</div>
 
-							<div className='flex items-center justify-center bg-four text-white rounded-full w-28 h-28 ml-4 lg:ml-6 flex-shrink-0'>
+							<div className='hidden md:flex items-center justify-center bg-four text-white rounded-full w-28 h-28 ml-4 lg:ml-6 flex-shrink-0'>
 								<div className='text-center font-teko font-semibold'>
 									<span className='text-lg block'>Since</span>
 									<span className='text-2xl'>2002</span>

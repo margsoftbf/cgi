@@ -8,15 +8,12 @@ const Slider4 = () => {
 	return (
 		<section
 			id='about'
-			className='relative w-full h-[60vh] bg-white overflow-hidden'
+			className='relative w-full h-[70vh] bg-white overflow-hidden'
 		>
-			{/* Background shape */}
 			<div
 				className='absolute opacity-[5%] top-0 left-0 right-0 bottom-0 bg-cover bg-no-repeat z-0'
 				style={{ backgroundImage: `url(${bgShape1})` }}
 			></div>
-
-			{/* Main content */}
 			<div className='absolute inset-0 flex justify-start items-center z-10 bg-white bg-opacity-10'>
 				<div className='flex flex-col items-center mt-20 text-left text-black space-y-4 p-6 font-teko w-full max-w-[100%] lg:max-w-[50%] 2xl:max-w-wrapper 2xl:m-auto lg:items-start pl-10 lg:pl-16'>
 					<motion.h1

@@ -6,6 +6,7 @@ import Slider2 from './components/Slider2';
 import Slider3 from './components/Slider3';
 import Slider4 from './components/Slider4';
 import About from './components/About';
+import OurAdvantages from './components/OurAdvantages';
 function App() {
 	const [activeSlider, setActiveSlider] = useState('slider1');
 
@@ -20,6 +21,7 @@ function App() {
 			{activeSlider === 'slider3' && <Slider3 />}
 			{activeSlider === 'slider4' && <Slider4 />}
 			<About />
+			<OurAdvantages />
 		</>
 	);
 }
