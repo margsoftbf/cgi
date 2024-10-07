@@ -33,7 +33,7 @@ const About = () => {
 								O nas
 								<span className='text-orange'>.</span>
 							</h2>
-							<p className='text-2xl text-left text-lightGray font-teko font-light uppercase'>
+							<p className='text-2xl text-left text-darkBeige font-teko font-light uppercase'>
 								Od 2002 roku świadczymy usługi dla ponad 100 firm, realizując
 								670 projektów.
 							</p>
