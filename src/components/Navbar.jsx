@@ -40,7 +40,7 @@ const Navbar = () => {
 
 					<div className='flex items-center lg:order-2'>
 						<button
-							className='relative px-4 py-1 text-base font-semibold bg-orange text-white rounded overflow-hidden transition-colors duration-300 ease-out hover:text-white'
+							className='hidden lg:block relative px-4 py-1 text-base font-semibold bg-orange text-white rounded overflow-hidden transition-colors duration-300 ease-out hover:text-white'
 							onMouseEnter={() => setIsHovered(true)}
 							onMouseLeave={() => setIsHovered(false)}
 						>

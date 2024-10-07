@@ -13,12 +13,12 @@ const Slider = () => {
 	return (
 		<section
 			id='about'
-			className='relative w-full h-full bg-white overflow-hidden pt-12'
+			className='relative w-full h-full bg-white overflow-hidden pt-12 md:pt-24'
 		>
 			<motion.img
 				src={triangleSvg}
 				alt='Triangle shape'
-				className='hidden md:block absolute top-36 left-24 w-16 h-16'
+				className='hidden xl:block absolute top-36 left-24 w-16 h-16'
 				initial={{ y: -300 }}
 				animate={{ y: 0 }}
 				transition={{ duration: 1, delay: 0.7 }}
@@ -26,7 +26,7 @@ const Slider = () => {
 			<motion.img
 				src={circleSvg}
 				alt='Triangle shape'
-				className='hidden md:block absolute bottom-32 left-[20%] w-16 h-16'
+				className='hidden xl:block absolute bottom-24 left-[20%] w-16 h-16'
 				initial={{ x: -800 }}
 				animate={{ x: 0 }}
 				transition={{ duration: 1, delay: 0.7 }}
