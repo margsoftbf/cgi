@@ -147,7 +147,7 @@ const Slider = () => {
 				transition={{ duration: 1.3, delay: 2 }}
 			></motion.div>
 			<motion.div
-				className='hidden lg:block absolute top-1 -right-[10%] w-[550px] h-[500px] xl:w-[650px] xl:h-[650px] lg:top-3 xl:-right-[5%] rounded-full overflow-hidden'
+				className='hidden lg:block absolute top-1 -right-[10%] w-[550px] h-[500px] xl:w-[620px] xl:h-[620px] 2xl:w-[650px] 2xl:h-[650px] lg:top-3 xl:-right-[5%] rounded-full overflow-hidden'
 				initial={{ x: 700 }}
 				animate={{ x: 0 }}
 				transition={{ duration: 1.3, delay: 1.5 }}
