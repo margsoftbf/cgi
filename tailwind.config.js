@@ -8,10 +8,11 @@ export default {
 				teko: ['Teko', 'sans-serif'],
 			},
 			colors: {
-				primary: '#FAF7F0',
-				secondary: '#D8D2C2',
-				third: '#B17457',
-				four: '#4A4947',
+				darkGray: '#5c5c5a',
+				lightGray: '#cbc4b4',
+				darkBeige: '#91837a',
+				lightBeige: '#FAF7F0',
+				orange: '#e99614',
 			},
 			maxWidth: {
 				wrapper: '1280px',

@@ -1,10 +1,10 @@
 import React from 'react';
-import roundImage from '../assets/shape-1.png';
-import slide1Image from '../assets/P2.png';
+import roundImage from '../assets/shapes/shape-1.png';
+import slide1Image from '../assets/photo/P2.png';
 
 const OurAdvantages = () => {
 	return (
-		<section className='relative bg-secondary py-4 md:py-12 overflow-hidden'>
+		<section className='relative bg-white py-4 md:py-12 overflow-hidden'>
 			<div className='max-w-wrapper mx-auto px-6'>
 				<div className='flex flex-col lg:flex-row items-center justify-between gap-6'>
 					<div className='relative w-full lg:w-1/2 flex justify-center lg:justify-end order-2'>
@@ -28,11 +28,11 @@ const OurAdvantages = () => {
 					</div>
 
 					<div className='w-full lg:w-1/2 flex flex-col justify-center mt-8 lg:mt-0'>
-						<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left text-four'>
+						<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left text-black'>
 							Co nas wyróżnia
-							<span className='text-third'>.</span>
+							<span className='text-orange'>.</span>
 						</h2>
-						<p className='text-four text-left mb-6'>
+						<p className='text-darkGray text-left mb-6'>
 							Z nami, nigdy nie będziesz musiał martwić się przedłużeniem lub
 							odstąpieniem od umowy. Nasze pakiety są zaprojektowane tak, aby
 							były optymalne od początku do końca i są wystarczająco elastyczne,
@@ -44,8 +44,8 @@ const OurAdvantages = () => {
 						<div className='space-y-8 font-teko'>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-third opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-third'>✔</span>
+									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h6 className='text-2xl font-medium'>Elastyczne pakiety</h6>
@@ -57,8 +57,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-third opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-third'>✔</span>
+									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h6 className='text-2xl font-medium'>
@@ -72,8 +72,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-third opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-third'>✔</span>
+									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h6 className='text-2xl font-medium'>Współpraca</h6>

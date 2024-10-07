@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo-garski.webp';
+import logo from '../assets/logo-garski-cig.png';
 
-const Navbar = ({ onSliderChange }) => {
+const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+	const [isHovered, setIsHovered] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
 			const header = document.querySelector('header');
@@ -30,25 +30,26 @@ const Navbar = ({ onSliderChange }) => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
 	};
 
-	const handleSliderChangeMobile = (sliderName) => {
-		onSliderChange(sliderName);
-		toggleMobileMenu(); 
-	};
-
 	return (
-		<header className='bg-primary w-full fixed top-0 z-30 transition-all duration-300 ease-in-out py-2'>
+		<header className='bg-lightBeige w-full fixed top-0 z-30 transition-all duration-300 ease-in-out py-2'>
 			<nav className='border-gray-200 py-2'>
 				<div className='flex flex-wrap justify-between items-center px-6 mx-auto max-w-wrapper'>
 					<a href='index.html' className='flex items-center z-50'>
-						<img src={logo} className='w-[90px]' alt='Logo' />
+						<img src={logo} className='w-40' alt='Logo' />
 					</a>
 
 					<div className='flex items-center lg:order-2'>
 						<button
-							type='button'
-							className='hidden lg:inline-block border border-four text-four font-bold py-1 px-4 rounded transition-all duration-300 ease-in-out hover:bg-four hover:text-white hover:shadow-lg'
+							className='relative px-4 py-1 text-base font-semibold bg-orange text-white rounded overflow-hidden transition-colors duration-300 ease-out hover:text-white'
+							onMouseEnter={() => setIsHovered(true)}
+							onMouseLeave={() => setIsHovered(false)}
 						>
-							Bezpłatna wycena
+							<span className='relative z-10'>Bezpłatna wycena</span>
+							<span
+								className={`absolute inset-0 bg-darkBeige transform transition-transform duration-500 ease-out ${
+									isHovered ? 'translate-x-0' : '-translate-x-full'
+								}`}
+							></span>
 						</button>
 
 						<button
@@ -76,8 +77,7 @@ const Navbar = ({ onSliderChange }) => {
 							<li>
 								<a
 									href='#home'
-									className='text-four hover:text-third transition-all duration-300'
-									onClick={() => handleSliderChangeMobile('slider1')}
+									className='text-darkGray hover:text-orange transition-all duration-300'
 								>
 									Home
 								</a>
@@ -85,8 +85,7 @@ const Navbar = ({ onSliderChange }) => {
 							<li>
 								<a
 									href='#about'
-									className='text-four hover:text-third transition-all duration-300'
-									onClick={() => handleSliderChangeMobile('slider2')}
+									className='text-darkGray hover:text-orange transition-all duration-300'
 								>
 									O firmie
 								</a>
@@ -94,8 +93,7 @@ const Navbar = ({ onSliderChange }) => {
 							<li>
 								<a
 									href='#experience'
-									className='text-four hover:text-third transition-all duration-300'
-									onClick={() => handleSliderChangeMobile('slider3')}
+									className='text-darkGray hover:text-orange transition-all duration-300'
 								>
 									Oferta
 								</a>
@@ -103,8 +101,7 @@ const Navbar = ({ onSliderChange }) => {
 							<li>
 								<a
 									href='#contact'
-									className='text-four hover:text-third transition-all duration-300'
-									onClick={() => handleSliderChangeMobile('slider4')}
+									className='text-darkGray hover:text-orange transition-all duration-300'
 								>
 									Kontakt
 								</a>
@@ -113,39 +110,35 @@ const Navbar = ({ onSliderChange }) => {
 					</div>
 
 					<div className='hidden md:flex lg:items-center lg:space-x-8 lg:order-1'>
-						<ul className='flex space-x-10 uppercase text-[14px] font-semibold tracking-wider'>
+						<ul className='flex space-x-10 uppercase text-base font-semibold tracking-wider'>
 							<li>
 								<a
-									onClick={() => onSliderChange('slider1')}
 									href='#home'
-									className='text-four hover:text-third transition-all duration-300'
+									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Home
 								</a>
 							</li>
 							<li>
 								<a
-									onClick={() => onSliderChange('slider2')}
 									href='#about'
-									className='text-four hover:text-third transition-all duration-300'
+									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
 								>
 									O firmie
 								</a>
 							</li>
 							<li>
 								<a
-									onClick={() => onSliderChange('slider3')}
 									href='#experience'
-									className='text-four hover:text-third transition-all duration-300'
+									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Oferta
 								</a>
 							</li>
 							<li>
 								<a
-									onClick={() => onSliderChange('slider4')}
 									href='#contact'
-									className='text-four hover:text-third transition-all duration-300'
+									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Kontakt
 								</a>
