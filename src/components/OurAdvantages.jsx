@@ -1,5 +1,5 @@
 import React from 'react';
-import roundImage from '../assets/shapes/shape-1.png';
+import roundImage from '../assets/shapes/shape-1.webp';
 import menInAdvantages from '../assets/photo/P2.webp';
 
 const OurAdvantages = () => {
@@ -48,7 +48,7 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-2xl font-medium'>Elastyczne pakiety</h6>
+									<h3 className='text-2xl font-medium'>Elastyczne pakiety</h3>
 									<p className='text-gray-600 font-lato'>
 										Nasze pakiety są wystarczająco elastyczne, aby dostosować je
 										do Twoich potrzeb, zapewniając pełną satysfakcję.
@@ -61,9 +61,9 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-2xl font-medium'>
+									<h3 className='text-2xl font-medium'>
 										Brak ukrytych zobowiązań
-									</h6>
+									</h3>
 									<p className='text-gray-600 font-lato'>
 										Z nami nie musisz martwić się o ukryte koszty czy
 										przedłużanie umów — dbamy o pełną przejrzystość.
@@ -76,7 +76,7 @@ const OurAdvantages = () => {
 									<span className='text-lg absolute z-20 text-orange'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
-									<h6 className='text-2xl font-medium'>Współpraca</h6>
+									<h3 className='text-2xl font-medium'>Współpraca</h3>
 									<p className='text-gray-600 font-lato'>
 										Skuteczność osiągamy tylko wtedy, gdy wspólnie się rozumiemy
 										i dążymy do realizacji naszych wspólnych celów.

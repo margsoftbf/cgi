@@ -35,12 +35,12 @@ const Navbar = () => {
 			<nav className='border-gray-200 py-2'>
 				<div className='flex flex-wrap justify-between items-center px-6 mx-auto max-w-wrapper'>
 					<a href='index.html' className='flex items-center z-50'>
-						<img src={logo} className='w-40' alt='Logo' />
+						<img src={logo} className='w-40 h-full' alt='Logo' />
 					</a>
 
 					<div className='flex items-center lg:order-2'>
 						<button
-							className='hidden lg:block relative px-4 py-1 text-base font-semibold bg-orange text-white rounded overflow-hidden transition-colors duration-300 ease-out hover:text-white'
+							className='hidden lg:block relative px-4 py-1 text-base font-semibold bg-orange text-black rounded overflow-hidden transition-colors duration-300 ease-out '
 							onMouseEnter={() => setIsHovered(true)}
 							onMouseLeave={() => setIsHovered(false)}
 						>

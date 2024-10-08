@@ -59,7 +59,7 @@ const Slider = () => {
 						>
 							<a
 								href='/demo'
-								className='relative inline-flex items-center justify-center px-5 py-3 text-base rounded-md text-white font-semibold bg-orange overflow-hidden transition-colors duration-300 ease-out'
+								className='relative inline-flex items-center justify-center px-5 py-3 text-base rounded-md text-black font-semibold bg-orange overflow-hidden transition-colors duration-300 ease-out'
 								onMouseEnter={() => setIsHovered(true)}
 								onMouseLeave={() => setIsHovered(false)}
 							>
