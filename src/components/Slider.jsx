@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, TrendingUp, Users } from 'lucide-react';
-import slide1Image from '../assets/photo/K1.png';
-import plusSvg from '../assets/svg/plus.svg';
-import triangleSvg from '../assets/svg/triangle.svg';
+import sliderMenPhoto from '../assets/photo/K1.webp';
 import lineSvg from '../assets/svg/line.svg';
-import circleSvg from '../assets/svg/circle.svg';
 import leftDown from '../assets/svg/leftDown.svg';
 
 const Slider = () => {
@@ -15,31 +12,6 @@ const Slider = () => {
 			id='about'
 			className='relative w-full h-full bg-white overflow-hidden pt-12 md:pt-24'
 		>
-			<motion.img
-				src={triangleSvg}
-				alt='Triangle shape'
-				className='hidden xl:block absolute top-36 left-24 w-16 h-16'
-				initial={{ y: -300 }}
-				animate={{ y: 0 }}
-				transition={{ duration: 1, delay: 0.7 }}
-			/>
-			<motion.img
-				src={circleSvg}
-				alt='Triangle shape'
-				className='hidden xl:block absolute bottom-24 left-[20%] w-16 h-16'
-				initial={{ x: -800 }}
-				animate={{ x: 0 }}
-				transition={{ duration: 1, delay: 0.7 }}
-			/>
-
-			<motion.img
-				src={plusSvg}
-				alt='Triangle shape'
-				className='hidden xl:block absolute top-28 right-[40%] w-16 h-16'
-				initial={{ y: -200 }}
-				animate={{ y: 0 }}
-				transition={{ duration: 1, delay: 0.7 }}
-			/>
 			<img
 				src={lineSvg}
 				alt='Triangle shape'
@@ -153,8 +125,8 @@ const Slider = () => {
 				transition={{ duration: 1.3, delay: 1.5 }}
 			>
 				<img
-					src={slide1Image}
-					alt='Rounded Image'
+					src={sliderMenPhoto}
+					alt='Men in office'
 					className='w-full h-full object-cover'
 				/>
 			</motion.div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import roundImage from '../assets/shapes/shape-1.png';
-import slide1Image from '../assets/photo/P2.png';
+import menInAdvantages from '../assets/photo/P2.webp';
 
 const OurAdvantages = () => {
 	return (
@@ -12,7 +12,7 @@ const OurAdvantages = () => {
 							<div
 								className='w-80 h-80 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] rounded-full overflow-hidden shadow-lg relative'
 								style={{
-									backgroundImage: `url(${slide1Image})`,
+									backgroundImage: `url(${menInAdvantages})`,
 									backgroundSize: 'cover',
 									backgroundPosition: 'center',
 								}}

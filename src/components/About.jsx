@@ -1,6 +1,6 @@
 import React from 'react';
-import slide1Image from '../assets/photo/A1.png';
-import slide2Image from '../assets/photo/K1.png';
+import aboutWomenPhoto from '../assets/photo/A1.webp';
+import aboutMenPhoto from '../assets/photo/W1.webp';
 
 const About = () => {
 	return (
@@ -11,16 +11,16 @@ const About = () => {
 						<div className='absolute left-0 top-0 h-56 w-4 bg-lightGray rounded-t-full rounded-b-full'></div>
 						<div className='relative z-10 overflow-hidden'>
 							<img
-								src={slide1Image}
-								alt='Featured 1'
+								src={aboutWomenPhoto}
+								alt='Women stay in office'
 								className='w-[470px] h-[516px] object-cover rounded-lg shadow-lg'
 							/>
 							<div className='absolute inset-0 bg-black opacity-10 rounded-lg w-[470px] h-full '></div>
 						</div>
 						<div className='absolute left-0 bottom-[-50px] z-10'>
 							<img
-								src={slide2Image}
-								alt='Featured 2'
+								src={aboutMenPhoto}
+								alt='Men stay in office'
 								className='w-[280px] lg:w[420] h-[295px] object-cover rounded-lg shadow-lg'
 							/>
 							<div className='absolute inset-0 bg-black opacity-10 rounded-lg w-[280px] lg:w[420] h-full '></div>
