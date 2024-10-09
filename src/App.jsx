@@ -6,6 +6,7 @@ import OurAdvantages from './components/OurAdvantages';
 import Offers from './components/Offers';
 import LogoSlider from './components/Slider';
 import Offers2 from './components/Offers2';
+import TrustedBy from './components/trustedby';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<OurAdvantages />
 			<Offers />
 			<Offers2 />
+			<TrustedBy />
 		</>
 	);
 }

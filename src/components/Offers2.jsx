@@ -63,7 +63,7 @@ const Offers2 = () => {
 					Nasza Oferta
 					<span className='text-primary'>.</span>
 				</h2>
-				<p className='text-darkGray text-left mb-8 lg:mb-12'>
+				<p className='text-darkGray text-center mb-8 lg:mb-12'>
 					Stosujemy tylko skuteczne i sprawdzone narzędzia marketingu.
 					Optymalizujemy strony, kampanie, media społecznościowe i każde inne
 					miejsce, w którym Twój potencjalny Klient ma możliwość, aby poznać i
