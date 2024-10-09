@@ -1,12 +1,4 @@
 import React from 'react';
-import {
-	FaGlobe,
-	FaChartBar,
-	FaAd,
-	FaCogs,
-	FaRocket,
-	FaPaintBrush,
-} from 'react-icons/fa';
 import strategia from '../assets/svg/strategia.svg';
 import ads from '../assets/svg/ads.svg';
 import pozycjonowanie from '../assets/svg/pozycjonowanie.svg';
@@ -20,14 +12,14 @@ const offers = [
 		description:
 			'Chcesz, aby Twoja strona była widoczna na szczycie wyników wyszukiwania Google? Skorzystaj z naszej oferty pozycjonowania stron! Dzięki indywidualnym strategiom SEO poprawisz widoczność, przyciągniesz więcej klientów i zwiększysz zyski.',
 		icon: (
-			<img src={pozycjonowanie} alt='' className='w-9 h-9 text-myGreen ml-1' />
+			<img src={pozycjonowanie} alt='' className='w-9 h-9 text-primary ml-1' />
 		),
 	},
 	{
 		title: 'Kampanie Google Ads',
 		description:
 			'Zoptymalizuj swoje kampanie Google Ads i osiągnij lepsze wyniki! Oferujemy kompleksowe prowadzenie kampanii: od tworzenia strategii, przez dobór słów kluczowych, aż po analizę wyników.',
-		icon: <img src={ads} alt='' className='w-9 h-9 text-myGreen ml-1' />,
+		icon: <img src={ads} alt='' className='w-9 h-9 text-primary ml-1' />,
 	},
 	{
 		title: 'Kampanie Facebook Ads',
@@ -37,7 +29,7 @@ const offers = [
 			<img
 				src={kampanieFacebook}
 				alt=''
-				className='w-8 h-8 text-myGreen ml-1'
+				className='w-8 h-8 text-primary ml-1'
 			/>
 		),
 	},
@@ -46,20 +38,20 @@ const offers = [
 		description:
 			'Oferujemy kompleksową konfigurację konta Google Analytics z pełnym wykorzystaniem Google Tag Managera. Śledź kluczowe dane i optymalizuj działania marketingowe.',
 		icon: (
-			<img src={konfiguracja} alt='' className='w-9 h-9 text-myGreen ml-1' />
+			<img src={konfiguracja} alt='' className='w-9 h-9 text-primary ml-1' />
 		),
 	},
 	{
 		title: 'Strategia Marki',
 		description:
 			'Strategia marki opracowana przez nas to kompleksowy plan, który prowadzi Twoją firmę do realizacji kluczowych celów: biznesowych, marketingowych i komunikacyjnych.',
-		icon: <img src={strategia} alt='' className='w-8 h-8 text-myGreen ml-1' />,
+		icon: <img src={strategia} alt='' className='w-8 h-8 text-primary ml-1' />,
 	},
 	{
 		title: 'Strony WWW',
 		description:
 			'Tworzymy strony WWW, które generują realne zyski! Nasze projekty zachwycają estetyką i spełniają cele biznesowe.',
-		icon: <img src={stronywww} alt='' className='w-9 h-9 text-myGreen ml-1' />,
+		icon: <img src={stronywww} alt='' className='w-9 h-9 text-primary ml-1' />,
 	},
 ];
 
@@ -92,10 +84,10 @@ const Offers2 = () => {
 							<div className='absolute -bottom-10 -right-3 w-20 h-20 bg-lightGray rounded-full opacity-30 transition-transform transform group-hover:scale-[15] group-hover:duration-500 group-hover:ease-linear z-0'></div>
 							<div className='relative z-10'>
 								<div className='w-16 h-16  relative flex items-center justify-center mb-4'>
-									<div className='absolute w-4 h-4 bg-myGreen top-0 right-1 rounded-full'></div>
-									<div className='absolute w-2 h-2 bg-myGreen bottom-0 left-2 rounded-full'></div>
-									<div className='absolute w-full h-full opacity-25 bg-myGreen rounded-full'></div>
-									<div className='text-myGreen'>{offer.icon}</div>
+									<div className='absolute w-4 h-4 bg-primary top-0 right-1 rounded-full'></div>
+									<div className='absolute w-2 h-2 bg-primary bottom-0 left-2 rounded-full'></div>
+									<div className='absolute w-full h-full opacity-25 bg-primary rounded-full'></div>
+									<div className='text-primary'>{offer.icon}</div>
 								</div>
 								<h3 className='text-xl font-bold mb-2 text-gray-800'>
 									{offer.title}

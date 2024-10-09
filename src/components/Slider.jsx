@@ -2,24 +2,24 @@ import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import facebookImg from '../assets/company/facebook.png'
-import googleAnalyticsImg from '../assets/company/google-analytics.png'
-import googleImg from '../assets/company/google.png'
-import instagramImg from '../assets/company/instagram.png'
+import facebookImg from '../assets/company/facebook.png';
+import googleAnalyticsImg from '../assets/company/google-analytics.png';
+import googleImg from '../assets/company/google.png';
+import instagramImg from '../assets/company/instagram.png';
 import linkedinImg from '../assets/company/linkedinn.png';
-import tiktokImg from '../assets/company/tiktok.png'
-import youtubeImg from '../assets/company/youtube.png'
+import tiktokImg from '../assets/company/tiktok.png';
+import youtubeImg from '../assets/company/youtube.png';
 
 const LogoSlider = () => {
 	const settings = {
 		dots: false,
-		arrows: false, 
+		arrows: false,
 		infinite: true,
 		speed: 700,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 5000, 
+		autoplaySpeed: 5000,
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -75,18 +75,34 @@ const LogoSlider = () => {
 	}, []);
 
 	return (
-		<div className='w-full py-8 bg-darkGray'>
-			<div className='w-full max-w-wrapper mx-auto'>
-				<h2 className='text-5xl leading-tight uppercase font-teko font-light text-center text-white'>
-					Działamy na <span className='text-primary'>.</span>
+		<div className='w-full py-8 bg-lightGray'>
+			<div className='w-full max-w-wrapper mx-auto px-4'>
+				<h2 className='text-5xl leading-tight uppercase font-teko font-light text-center text-black'>
+					Reklamujemy tam, gdzie to ma znaczenie{' '}
+					<span className='text-white'>.</span>
 				</h2>
+				<p className='text-black mb-6 text-center'>
+					Stosujemy tylko skuteczne i sprawdzone narzędzia marketingu.
+					Optymalizujemy strony, kampanie, media społecznościowe i każde inne
+					miejsce, w którym Twój potencjalny Klient ma możliwość, aby poznać i
+					ocenić Twoją ofertę i firmę. Analizując dane, na bieżąco dopasowujemy
+					prowadzone działania marketingowe, aby dotrzeć w jak najbardziej
+					efektowny sposób do Twoich optymalnych klientów. Osiągamy wysokie
+					zwroty z inwestycji, optymalizujemy koszty i nigdy nie wykorzystujemy
+					twoich środków finansowych ponad miarę. Działamy transparentnie i
+					uczciwie.
+				</p>
+
 				<Slider {...settings}>
 					{logos.map((logo) => (
-						<div key={logo.id} className='flex justify-center items-center p-4 outline-none select-none border-none'>
+						<div
+							key={logo.id}
+							className='flex justify-center items-center py-4 outline-none select-none border-none'
+						>
 							<img
 								src={logo.src}
 								alt={logo.alt}
-								className='h-24 w-auto object-contain outline-none select-none border-none'
+								className='h-24 w-auto object-contain outline-none select-none border-none mx-auto'
 							/>
 						</div>
 					))}

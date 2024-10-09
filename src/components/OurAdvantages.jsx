@@ -1,5 +1,5 @@
 import React from 'react';
-import roundImage from '../assets/shapes/shape-1.webp';
+import roundImage from '../assets/shapes/shape-1.png';
 import menInAdvantages from '../assets/photo/P2.webp';
 
 const OurAdvantages = () => {
