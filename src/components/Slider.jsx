@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import facebookImg from '../assets/company/facebook.png';
-import googleAnalyticsImg from '../assets/company/google-analytics.png';
-import googleImg from '../assets/company/google.png';
-import instagramImg from '../assets/company/instagram.png';
-import linkedinImg from '../assets/company/linkedinn.png';
-import tiktokImg from '../assets/company/tiktok.png';
-import youtubeImg from '../assets/company/youtube.png';
+import facebookImg from '../assets/company/facebook.webp';
+import googleAnalyticsImg from '../assets/company/google-analytics.webp';
+import googleImg from '../assets/company/google.webp';
+import instagramImg from '../assets/company/instagram.webp';
+import linkedinImg from '../assets/company/linkedinn.webp';
+import tiktokImg from '../assets/company/tiktok.webp';
+import youtubeImg from '../assets/company/youtube.webp';
 
 const LogoSlider = () => {
 	const settings = {
