@@ -37,7 +37,7 @@ const Hero = () => {
 							<span className='block font-teko font-medium text-6xl xl:text-7xl'>
 								Zwiększ efektywność
 							</span>
-							<span className='block text-orange font-teko font-medium text-5xl xl:text-6xl'>
+							<span className='block text-myGreen font-teko font-medium text-5xl xl:text-6xl'>
 								swojego biznesu.
 							</span>
 						</motion.h1>
@@ -59,7 +59,7 @@ const Hero = () => {
 						>
 							<a
 								href='/demo'
-								className='relative inline-flex items-center justify-center px-5 py-3 text-base rounded-md text-black font-semibold bg-orange overflow-hidden transition-colors duration-300 ease-out'
+								className='relative inline-flex items-center justify-center px-5 py-3 text-base rounded-md text-black font-semibold bg-myGreen overflow-hidden transition-colors duration-300 ease-out'
 								onMouseEnter={() => setIsHovered(true)}
 								onMouseLeave={() => setIsHovered(false)}
 							>

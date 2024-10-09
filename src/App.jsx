@@ -12,8 +12,8 @@ function App() {
 			<Navbar />
 			<Hero />
 			<About />
-			<OurAdvantages />
 			<LogoSlider />
+			<OurAdvantages />
 			<Offers />
 		</>
 	);

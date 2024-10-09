@@ -3,49 +3,57 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import sliderPhoto from '../assets/google.png';
+import facebookImg from '../assets/company/facebook.png'
+import googleAnalyticsImg from '../assets/company/google-analytics.png'
+import googleImg from '../assets/company/google.png'
+import instagramImg from '../assets/company/instagram.png'
+import linkedinImg from '../assets/company/linkedin.png'
+import tiktokImg from '../assets/company/tiktok.png'
+import youtubeImg from '../assets/company/youtube.png'
 
 const LogoSlider = () => {
 	const settings = {
 		dots: false,
+		arrows: false, 
 		infinite: true,
-		speed: 2000,
+		speed: 700,
 		slidesToShow: 4,
-		slidesToScroll: 0.2,
+		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 0,
-		cssEase: 'linear',
+		autoplaySpeed: 5000, 
 		responsive: [
 			{
 				breakpoint: 1024,
 				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 0.1,
+					slidesToShow: 3,
+					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 0.1,
+					slidesToScroll: 1,
 				},
 			},
 			{
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 0.1,
+					slidesToScroll: 1,
 				},
 			},
 		],
 	};
 
 	const logos = [
-		{ id: 1, src: sliderPhoto, alt: 'Firma 1' },
-		{ id: 2, src: sliderPhoto, alt: 'Firma 2' },
-		{ id: 3, src: sliderPhoto, alt: 'Firma 3' },
-		{ id: 4, src: sliderPhoto, alt: 'Firma 4' },
-		{ id: 5, src: sliderPhoto, alt: 'Firma 5' },
-		{ id: 6, src: sliderPhoto, alt: 'Firma 6' },
+		{ id: 1, src: facebookImg, alt: 'Facebook logo image' },
+		{ id: 2, src: googleAnalyticsImg, alt: 'Google analytics logo image' },
+		{ id: 3, src: googleImg, alt: 'Google logo image' },
+		{ id: 4, src: instagramImg, alt: 'Instagram logo image' },
+		{ id: 5, src: linkedinImg, alt: 'Linkedin logo image' },
+		{ id: 6, src: tiktokImg, alt: 'Tiktok logo image' },
+		{ id: 6, src: youtubeImg, alt: 'Youtube logo image' },
 	];
 
 	const sliderRef = useRef < HTMLDivElement > null;
@@ -71,7 +79,7 @@ const LogoSlider = () => {
 		<div className='w-full py-8 bg-darkGray'>
 			<div className='w-full max-w-wrapper mx-auto'>
 				<h2 className='text-5xl leading-tight uppercase font-teko font-light text-center text-white'>
-					Zaufali nam <span className='text-orange'>.</span>
+					Działamy na <span className='text-orange'>.</span>
 				</h2>
 				<Slider {...settings}>
 					{logos.map((logo) => (

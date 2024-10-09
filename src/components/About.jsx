@@ -31,9 +31,9 @@ const About = () => {
 						<div className='mb-4'>
 							<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left'>
 								O nas
-								<span className='text-orange'>.</span>
+								<span className='text-myGreen'>.</span>
 							</h2>
-							<p className='text-2xl text-left text-darkBeige font-teko font-light uppercase'>
+							<p className='text-2xl text-left text-darkGray font-teko font-light uppercase'>
 								Od 2002 roku świadczymy usługi dla ponad 100 firm, realizując
 								670 projektów.
 							</p>
@@ -49,21 +49,21 @@ const About = () => {
 						<div className='flex flex-row items-center space-x-5 relative'>
 							<ul className='list-none space-y-2 w-full md:w-[75%] text-left'>
 								<li className='flex items-start'>
-									<span className='text-orange mr-2'>✔</span>
+									<span className='text-myGreen mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Świadczymy usługi marketingu cyfrowego, obejmujące doradztwo
 										i zarządzanie.
 									</span>
 								</li>
 								<li className='flex items-start'>
-									<span className='text-orange mr-2'>✔</span>
+									<span className='text-myGreen mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Zajmujemy się różnymi taktykami i strategiami marketingu
 										internetowego.
 									</span>
 								</li>
 								<li className='flex items-start'>
-									<span className='text-orange mr-2'>✔</span>
+									<span className='text-myGreen mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Pomagamy w kampaniach marketingowych w mediach
 										społecznościowych.

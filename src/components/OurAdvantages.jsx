@@ -44,8 +44,8 @@ const OurAdvantages = () => {
 						<div className='space-y-8 font-teko'>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-orange'>✔</span>
+									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>Elastyczne pakiety</h3>
@@ -57,8 +57,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-orange'>✔</span>
+									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>
@@ -72,8 +72,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-orange opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-orange'>✔</span>
+									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>Współpraca</h3>

@@ -8,22 +8,22 @@ export default function Offers() {
 			title: 'Pozycjonowanie stron',
 			description:
 				'Zwiększ widoczność swojej strony w wynikach wyszukiwania Google',
-			icon: <Search className='h-6 w-6 text-[#e99614] opacity-100' />,
+			icon: <Search className='h-6 w-6 text-myGreen opacity-100' />,
 		},
 		{
 			title: 'Kampanie Google Ads',
 			description: 'Zoptymalizuj swoje kampanie i osiągnij lepsze wyniki',
-			icon: <BarChart2 className='h-6 w-6 text-[#e99614]' />,
+			icon: <BarChart2 className='h-6 w-6 text-myGreen' />,
 		},
 		{
 			title: 'Kampanie Facebook Ads',
 			description: 'Skutecznie prowadź kampanie na FB i Instagramie',
-			icon: <Users className='h-6 w-6 text-[#e99614]' />,
+			icon: <Users className='h-6 w-6 text-myGreen' />,
 		},
 		{
 			title: 'Konfiguracja Google Analytics',
 			description: 'Kompleksowa konfiguracja i analiza danych',
-			icon: <PieChart className='h-6 w-6 text-[#e99614]' />,
+			icon: <PieChart className='h-6 w-6 text-myGreen' />,
 		},
 	];
 
@@ -34,9 +34,9 @@ export default function Offers() {
 					<div className='lg:w-2/3 lg:order-2 px-8'>
 						<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left'>
 							Nasza oferta
-							<span className='text-orange'>.</span>
+							<span className='text-myGreen'>.</span>
 						</h2>
-						<p className='text-2xl text-left text-darkBeige font-teko font-light uppercase mb-8'>
+						<p className='text-2xl text-left text-darkGray font-teko font-light uppercase mb-8'>
 							Stosujemy tylko skuteczne i sprawdzone narzędzia marketingu.
 							Optymalizujemy każdy aspekt Twojej obecności online, aby
 							zmaksymalizować Twój sukces.
@@ -45,19 +45,17 @@ export default function Offers() {
 							{services.map((service, index) => (
 								<div
 									key={index}
-									className='bg-lightGray rounded-lg overflow-hidden group hover:bg-[#e99614] transition-colors duration-300'
+									className='bg-lightGray rounded-lg overflow-hidden group hover:bg-myGreen transition-colors duration-300'
 								>
-									<div className='p-4 flex flex-col gap-3 md:gap-0 md:flex-row items-center'>
-										<div className='relative mr-4 p-2 bg-lightBeige rounded-full transition-colors duration-300'>
+									<div className='p-4 flex flex-col gap-3 md:gap-0 lg:flex-row items-center'>
+										<div className='relative lg:mr-4  mb-2 lg:mb-0 p-2 bg-lightBeige rounded-full transition-colors duration-300'>
 											{service.icon}
 										</div>
 										<div>
 											<h3 className='font-semibold mb-2 group-hover:text-black text-center'>
 												{service.title}
 											</h3>
-											<p className='text-sm group-hover:text-darkGray'>
-												{service.description}
-											</p>
+											<p className='text-sm '>{service.description}</p>
 										</div>
 									</div>
 								</div>
@@ -71,13 +69,6 @@ export default function Offers() {
 								alt='zespół osób'
 								className='object-cover w-full h-full'
 							/>
-							{/* <div className='absolute bottom-4 left-12 bg-[#5c5c5a] text-[#FAF7F0] p-2 rounded-lg transform'>
-								<p className='text-sm font-semibold'>
-									Nagradzana Agencja
-									<br />
-									Marketingu Cyfrowego
-								</p>
-							</div> */}
 						</div>
 					</div>
 				</div>

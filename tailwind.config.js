@@ -13,6 +13,7 @@ export default {
 				darkBeige: '#91837a',
 				lightBeige: '#FAF7F0',
 				orange: '#e99614',
+				myGreen: '#9ACE9C',
 			},
 			maxWidth: {
 				wrapper: '1280px',
