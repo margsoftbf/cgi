@@ -30,7 +30,7 @@ const OurAdvantages = () => {
 					<div className='w-full lg:w-1/2 flex flex-col justify-center mt-8 lg:mt-0'>
 						<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left text-black'>
 							Co nas wyróżnia
-							<span className='text-orange'>.</span>
+							<span className='text-primary'>.</span>
 						</h2>
 						<p className='text-darkGray text-left mb-6'>
 							Z nami, nigdy nie będziesz musiał martwić się przedłużeniem lub
@@ -44,8 +44,8 @@ const OurAdvantages = () => {
 						<div className='space-y-8 font-teko'>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
+									<div className='w-full h-full bg-primary opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-primary'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>Elastyczne pakiety</h3>
@@ -57,8 +57,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
+									<div className='w-full h-full bg-primary opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-primary'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>
@@ -72,8 +72,8 @@ const OurAdvantages = () => {
 							</div>
 							<div className='flex items-center'>
 								<div className='relative w-12 h-12 text-white flex justify-center items-center rounded-full flex-shrink-0 overflow-hidden'>
-									<div className='w-full h-full bg-myGreen opacity-25 absolute'></div>
-									<span className='text-lg absolute z-20 text-myGreen'>✔</span>
+									<div className='w-full h-full bg-primary opacity-25 absolute'></div>
+									<span className='text-lg absolute z-20 text-primary'>✔</span>
 								</div>
 								<div className='ml-4 text-left'>
 									<h3 className='text-2xl font-medium'>Współpraca</h3>

@@ -28,10 +28,10 @@ const About = () => {
 					</div>
 
 					<div className='w-full xl:w-1/2 lg:w-full px-4 flex flex-col justify-center gap-3 mt-20 lg:mt-0'>
-						<div className='mb-4'>
+						<div className='mb-2'>
 							<h2 className='text-6xl leading-tight uppercase font-teko font-light text-left'>
 								O nas
-								<span className='text-myGreen'>.</span>
+								<span className='text-primary'>.</span>
 							</h2>
 							<p className='text-2xl text-left text-darkGray font-teko font-light uppercase'>
 								Od 2002 roku świadczymy usługi dla ponad 100 firm, realizując
@@ -40,30 +40,34 @@ const About = () => {
 						</div>
 
 						<p className='text-darkGray text-left mb-4'>
-							Nasze kampanie reklamowe wygenerowały 108 120 000 wyświetleń i
-							pozyskały 15 768 000 potencjalnych klientów. Dzięki inwestycjom o
-							wartości 14 320 000 zł, przychody wyniosły 379 480 000 zł, co daje
-							średni ROI na poziomie +2650%.
+							Nasze kampanie reklamowe wygenerowały 108 120 000 wyświetleń,
+							pozyskując 15 768 000 potencjalnych klientów. Dzięki inwestycjom
+							naszych partnerów wynoszącym 14 320 000 zł wygenerowaliśmy
+							przychody o wartości 379 480 000 zł, co przekłada się na średni
+							zwrot z każdej zainwestowanej złotówki (ROI) na poziomie +2650%.
+							Nasze usługi marketingu cyfrowego obejmują doradztwo i opcje
+							zarządzania w zakresie różnych taktyk i strategii marketingu w
+							Internecie i mediach społecznościowych.
 						</p>
 
 						<div className='flex flex-row items-center space-x-5 relative'>
 							<ul className='list-none space-y-2 w-full md:w-[75%] text-left'>
 								<li className='flex items-start'>
-									<span className='text-myGreen mr-2'>✔</span>
+									<span className='text-primary mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Świadczymy usługi marketingu cyfrowego, obejmujące doradztwo
 										i zarządzanie.
 									</span>
 								</li>
 								<li className='flex items-start'>
-									<span className='text-myGreen mr-2'>✔</span>
+									<span className='text-primary mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Zajmujemy się różnymi taktykami i strategiami marketingu
 										internetowego.
 									</span>
 								</li>
 								<li className='flex items-start'>
-									<span className='text-myGreen mr-2'>✔</span>
+									<span className='text-primary mr-2'>✔</span>
 									<span className='max-w-full break-words'>
 										Pomagamy w kampaniach marketingowych w mediach
 										społecznościowych.

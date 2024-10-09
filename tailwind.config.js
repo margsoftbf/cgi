@@ -12,6 +12,7 @@ export default {
 				lightGray: '#cbc4b4',
 				darkBeige: '#91837a',
 				lightBeige: '#FAF7F0',
+				primary: '#9ACE9C',
 				orange: '#e99614',
 				myGreen: '#9ACE9C',
 			},

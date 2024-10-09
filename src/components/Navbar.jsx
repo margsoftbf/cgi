@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/logo-garski-cig.webp';
+import logoSmall from '../assets/logo-small.png';
 
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,18 +36,18 @@ const Navbar = () => {
 			<nav className='border-gray-200 py-2'>
 				<div className='flex flex-wrap justify-between items-center px-6 mx-auto max-w-wrapper'>
 					<a href='index.html' className='flex items-center z-50'>
-						<img src={logo} className='w-40 h-full' alt='Logo' />
+						<img src={logo} className='w-full h-12' alt='Logo' />
 					</a>
 
 					<div className='flex items-center lg:order-2'>
 						<button
-							className='hidden lg:block relative px-4 py-1 text-base font-semibold bg-myGreen text-black rounded overflow-hidden transition-colors duration-300 ease-out '
+							className='hidden lg:block relative px-4 py-1 text-base font-semibold bg-primary text-black rounded overflow-hidden transition-colors duration-300 ease-out '
 							onMouseEnter={() => setIsHovered(true)}
 							onMouseLeave={() => setIsHovered(false)}
 						>
 							<span className='relative z-10'>Bezpłatna wycena</span>
 							<span
-								className={`absolute inset-0 bg-darkBeige transform transition-transform duration-500 ease-out ${
+								className={`absolute inset-0 bg-lightGray transform transition-transform duration-500 ease-out ${
 									isHovered ? 'translate-x-0' : '-translate-x-full'
 								}`}
 							></span>
@@ -77,7 +78,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#home'
-									className='text-darkGray hover:text-orange transition-all duration-300'
+									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Home
 								</a>
@@ -85,7 +86,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#about'
-									className='text-darkGray hover:text-orange transition-all duration-300'
+									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									O firmie
 								</a>
@@ -93,7 +94,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#experience'
-									className='text-darkGray hover:text-orange transition-all duration-300'
+									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Oferta
 								</a>
@@ -101,7 +102,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#contact'
-									className='text-darkGray hover:text-orange transition-all duration-300'
+									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Kontakt
 								</a>
@@ -114,7 +115,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#home'
-									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Home
 								</a>
@@ -122,7 +123,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#about'
-									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
 								>
 									O firmie
 								</a>
@@ -130,7 +131,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#experience'
-									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Oferta
 								</a>
@@ -138,7 +139,7 @@ const Navbar = () => {
 							<li>
 								<a
 									href='#contact'
-									className='text-darkGray hover:text-orange transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-orange before:transition-all before:duration-300 hover:before:w-full'
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
 								>
 									Kontakt
 								</a>

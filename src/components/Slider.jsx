@@ -78,15 +78,15 @@ const LogoSlider = () => {
 		<div className='w-full py-8 bg-darkGray'>
 			<div className='w-full max-w-wrapper mx-auto'>
 				<h2 className='text-5xl leading-tight uppercase font-teko font-light text-center text-white'>
-					Działamy na <span className='text-orange'>.</span>
+					Działamy na <span className='text-primary'>.</span>
 				</h2>
 				<Slider {...settings}>
 					{logos.map((logo) => (
-						<div key={logo.id} className='flex justify-center items-center p-4'>
+						<div key={logo.id} className='flex justify-center items-center p-4 outline-none select-none border-none'>
 							<img
 								src={logo.src}
 								alt={logo.alt}
-								className='h-24 w-auto object-contain'
+								className='h-24 w-auto object-contain outline-none select-none border-none'
 							/>
 						</div>
 					))}

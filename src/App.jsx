@@ -5,6 +5,7 @@ import About from './components/About';
 import OurAdvantages from './components/OurAdvantages';
 import Offers from './components/Offers';
 import LogoSlider from './components/Slider';
+import Offers2 from './components/Offers2';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<LogoSlider />
 			<OurAdvantages />
 			<Offers />
+			<Offers2 />
 		</>
 	);
 }
