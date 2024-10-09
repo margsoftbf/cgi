@@ -16,9 +16,9 @@ function App() {
 			<About />
 			<LogoSlider />
 			<OurAdvantages />
-			<Offers />
-			<Offers2 />
 			<TrustedBy />
+			<Offers2 />
+			<Offers />
 		</>
 	);
 }
