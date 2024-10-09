@@ -6,7 +6,7 @@ import facebookImg from '../assets/company/facebook.png'
 import googleAnalyticsImg from '../assets/company/google-analytics.png'
 import googleImg from '../assets/company/google.png'
 import instagramImg from '../assets/company/instagram.png'
-import linkedinImg from '../assets/company/linkedin.png'
+import linkedinImg from 'src/assets/company/linkedin.png';
 import tiktokImg from '../assets/company/tiktok.png'
 import youtubeImg from '../assets/company/youtube.png'
 
