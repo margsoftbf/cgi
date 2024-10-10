@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import teamPhoto from '../assets/photo/MKPAW.png';
 
 const Contact = () => {
-    const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(false);
 	const validationSchema = Yup.object().shape({
 		firstName: Yup.string().required('Imię i nazwisko jest wymagane'),
 		company: Yup.string(),
@@ -29,14 +29,14 @@ const Contact = () => {
 	const {
 		register,
 		handleSubmit,
-        reset,
+		reset,
 		formState: { errors },
 	} = useForm({
 		resolver: yupResolver(validationSchema),
 	});
 
 	const onSubmit = (data) => {
-        setLoading(true);
+		setLoading(true);
 
 		const emailData = {
 			to_name: data.firstName,
@@ -57,7 +57,7 @@ const Contact = () => {
 			.then((response) => {
 				console.log('Email wysłany!', response.status, response.text);
 				toast.success('Wiadomość została wysłana!');
-                reset(); 
+				reset();
 			})
 			.catch((err) => {
 				console.error('Błąd przy wysyłaniu e-maila:', err);
@@ -65,8 +65,8 @@ const Contact = () => {
 					'Wystąpił błąd przy wysyłaniu wiadomości. Spróbuj ponownie.'
 				);
 			})
-            .finally(() => {
-				setLoading(false); 
+			.finally(() => {
+				setLoading(false);
 			});
 	};
 
