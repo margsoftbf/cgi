@@ -92,7 +92,7 @@ const Contact = () => {
 							doświadczenie i zaangażowanie pomogą znaleźć najlepsze rozwiązania
 							dla Twojej firmy.
 						</p>
-						<div className='mt-8 text-base leading-7 text-gray-600 flex items-center justify-between'>
+						<div className='mt-8 text-base leading-7 text-gray-600 flex flex-col gap-4 sm:flex-row items-center justify-between'>
 							<div className='flex gap-x-4'>
 								<dt className='flex-none'>
 									<span className='sr-only'>Telephone</span>
