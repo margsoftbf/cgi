@@ -97,7 +97,7 @@ const Contact = () => {
 						</p>
 						<div className='mt-8 text-base leading-7 text-gray-600 flex flex-col gap-4 sm:flex-row items-center justify-between'>
 							<dl className='flex flex-col sm:flex-row justify-between w-full gap-4'>
-								<div className='flex items-center'>
+								<div className='flex items-center gap-2'>
 									<dt className='flex-none'>
 										<span className='sr-only'>Telephone</span>
 										<svg
@@ -121,7 +121,7 @@ const Contact = () => {
 										</a>
 									</dd>
 								</div>
-								<div className='flex items-center'>
+								<div className='flex items-center gap-2'>
 									<dt className='flex-none'>
 										<span className='sr-only'>Email</span>
 										<svg
@@ -238,7 +238,10 @@ const Contact = () => {
 								</div>
 								<div className='sm:col-span-2'>
 									<div className='flex justify-between text-sm leading-6'>
-										<label htmlFor='description' className='block text-sm font-semibold leading-6 text-gray-900'>
+										<label
+											htmlFor='description'
+											className='block text-sm font-semibold leading-6 text-gray-900'
+										>
 											Jak możemy ci pomóc?
 										</label>
 										<p id='message-description' className='text-gray-600'>
@@ -247,7 +250,7 @@ const Contact = () => {
 									</div>
 									<div className='mt-2.5'>
 										<textarea
-                                        id='description'
+											id='description'
 											{...register('message')}
 											rows={4}
 											maxLength={500}
