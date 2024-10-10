@@ -5,9 +5,12 @@ import sliderMenPhoto from '../assets/photo/K1.webp';
 import lineSvg from '../assets/svg/line.svg';
 
 const Hero = () => {
+
+
+
 	return (
 		<section
-			id='about'
+			id='home'
 			className='relative w-full h-full bg-white overflow-hidden pt-12 md:pt-24'
 		>
 			<img

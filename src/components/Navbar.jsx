@@ -31,6 +31,22 @@ const Navbar = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
 	};
 
+	const scrollToSection = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			const offset = 80;
+			const elementPosition = element.getBoundingClientRect().top;
+			const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+			window.scrollTo({
+				top: offsetPosition,
+				behavior: 'smooth',
+			});
+
+			setIsMobileMenuOpen(false);
+		}
+	};
+
 	return (
 		<header className='bg-lightBeige w-full fixed top-0 z-30 transition-all duration-300 ease-in-out py-2'>
 			<nav className='border-gray-200 py-2'>
@@ -44,6 +60,7 @@ const Navbar = () => {
 							className='hidden lg:block relative px-4 py-2 text-base font-semibold bg-primary text-black rounded overflow-hidden transition-colors duration-300 ease-out '
 							onMouseEnter={() => setIsHovered(true)}
 							onMouseLeave={() => setIsHovered(false)}
+							onClick={() => scrollToSection('contact')}
 						>
 							<span className='relative z-10'>Bezpłatna wycena</span>
 							<span
@@ -77,7 +94,7 @@ const Navbar = () => {
 						<ul className='flex flex-col justify-center items-center h-full space-y-8 uppercase text-xl'>
 							<li>
 								<a
-									href='#home'
+									onClick={() => scrollToSection('home')}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Home
@@ -85,7 +102,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									href='#about'
+									onClick={() => scrollToSection('about')}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									O firmie
@@ -93,7 +110,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									href='#experience'
+									onClick={() => scrollToSection('offers')}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Oferta
@@ -101,7 +118,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									href='#contact'
+									onClick={() => scrollToSection('contact')}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Kontakt
@@ -114,32 +131,32 @@ const Navbar = () => {
 						<ul className='flex space-x-10 uppercase text-base font-semibold tracking-wider'>
 							<li>
 								<a
-									href='#home'
-									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
+									onClick={() => scrollToSection('home')}
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
 									Home
 								</a>
 							</li>
 							<li>
 								<a
-									href='#about'
-									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
+									onClick={() => scrollToSection('about')}
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
 									O firmie
 								</a>
 							</li>
 							<li>
 								<a
-									href='#experience'
-									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
+									onClick={() => scrollToSection('offers')}
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
 									Oferta
 								</a>
 							</li>
 							<li>
 								<a
-									href='#contact'
-									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full'
+									onClick={() => scrollToSection('contact')}
+									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
 									Kontakt
 								</a>

@@ -4,7 +4,7 @@ import aboutMenPhoto from '../assets/photo/W1.webp';
 
 const About = () => {
 	return (
-		<section className='relative bg-lightBeige py-16 overflow-hidden'>
+		<section id="about" className='relative bg-lightBeige py-16 overflow-hidden'>
 			<div className='max-w-wrapper mx-auto'>
 				<div className='flex flex-col lg:flex-row justify-center'>
 					<div className='relative w-full xl:w-1/2 lg:w-full px-8 ml-2 sm:ml-32 lg:ml-2'>

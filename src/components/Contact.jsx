@@ -71,7 +71,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className='relative bg-white'>
+		<section id="contact" className='relative bg-white'>
 			<div className='lg:absolute lg:inset-0 lg:left-1/2 m-2 lg:m-12 p-2'>
 				<img
 					alt=''
@@ -205,7 +205,7 @@ const Contact = () => {
 				draggable
 				pauseOnFocusLoss
 			/>
-		</div>
+		</section>
 	);
 };
 

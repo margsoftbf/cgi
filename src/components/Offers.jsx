@@ -57,7 +57,7 @@ const offers = [
 
 const Offers = () => {
 	return (
-		<div className='relative'>
+		<div id="offers" className='relative'>
 			<div className='max-w-wrapper mx-auto p-8'>
 				<h2 className='text-6xl leading-tight uppercase font-teko font-light text-center text-black'>
 					Nasza Oferta
