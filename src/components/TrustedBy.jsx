@@ -37,7 +37,8 @@ const TrustedBy = () => {
 							<img
 								src={company.src}
 								alt={company.alt}
-								className='max-h-14 grayscale group-hover:grayscale-0 transition-all duration-300'
+								loading="lazy"
+								className='h-14 object-contain grayscale group-hover:grayscale-0 transition-all duration-300'
 							/>
 						</div>
 					))}

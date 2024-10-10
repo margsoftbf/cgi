@@ -52,7 +52,7 @@ const LogoSlider = () => {
 		{ id: 4, src: instagramImg, alt: 'Instagram logo image' },
 		{ id: 5, src: linkedinImg, alt: 'Linkedin logo image' },
 		{ id: 6, src: tiktokImg, alt: 'Tiktok logo image' },
-		{ id: 6, src: youtubeImg, alt: 'Youtube logo image' },
+		{ id: 7, src: youtubeImg, alt: 'Youtube logo image' },
 	];
 
 	const sliderRef = useRef < HTMLDivElement > null;
@@ -102,7 +102,7 @@ const LogoSlider = () => {
 							<img
 								src={logo.src}
 								alt={logo.alt}
-								className='h-24 w-auto object-contain outline-none select-none border-none mx-auto'
+								className='h-24 object-contain outline-none select-none border-none mx-auto'
 							/>
 						</div>
 					))}

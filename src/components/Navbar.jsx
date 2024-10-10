@@ -52,12 +52,18 @@ const Navbar = () => {
 			<nav className='border-gray-200 py-2'>
 				<div className='flex flex-wrap justify-between items-center px-6 mx-auto max-w-wrapper'>
 					<a href='index.html' className='flex items-center z-50'>
-						<img src={logo} className='w-full h-8 sm:h-10 lg:h-12' alt='Logo' />
+						<img
+							src={logo}
+							width={160}
+							height={48}
+							className='w-full h-8 sm:h-10 lg:h-12'
+							alt='Logo'
+						/>
 					</a>
 
 					<div className='flex items-center lg:order-2'>
 						<button
-							className='hidden lg:block relative px-4 py-2 text-base font-semibold bg-primary text-black rounded overflow-hidden transition-colors duration-300 ease-out '
+							className='hidden lg:block relative px-4 py-2 text-base font-semibold bg-primary text-black rounded overflow-hidden transition-colors duration-300 ease-out'
 							onMouseEnter={() => setIsHovered(true)}
 							onMouseLeave={() => setIsHovered(false)}
 							onClick={() => scrollToSection('contact')}

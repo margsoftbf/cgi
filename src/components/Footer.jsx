@@ -11,7 +11,7 @@ export default function Footer() {
 							NIP: 9541360186 — REGON: 277826484
 						</p>
 					</div>
-					<p className='mt-2 text-center text-xs leading-5 text-gray-400 md:text-left'>
+					<p className='mt-2 text-center text-xs leading-5 text-gray-600 md:text-left'>
 						&copy; 2024 Wszelkie prawa zastrzeżone.
 					</p>
 				</div>

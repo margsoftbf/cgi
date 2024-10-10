@@ -1,5 +1,5 @@
 import React from 'react';
-import roundImage from '../assets/shapes/shape-1.png';
+import roundImage from '../assets/shapes/shape-1.webp';
 import menInAdvantages from '../assets/photo/P2.webp';
 
 const OurAdvantages = () => {
@@ -11,6 +11,7 @@ const OurAdvantages = () => {
 						<div className='relative'>
 							<div
 								className='w-80 h-80 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] rounded-full overflow-hidden shadow-lg relative'
+								loading="lazy"
 								style={{
 									backgroundImage: `url(${menInAdvantages})`,
 									backgroundSize: 'cover',

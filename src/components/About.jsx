@@ -4,7 +4,10 @@ import aboutMenPhoto from '../assets/photo/W1.webp';
 
 const About = () => {
 	return (
-		<section id="about" className='relative bg-lightBeige py-16 overflow-hidden'>
+		<section
+			id='about'
+			className='relative bg-lightBeige py-16 overflow-hidden'
+		>
 			<div className='max-w-wrapper mx-auto'>
 				<div className='flex flex-col lg:flex-row justify-center'>
 					<div className='relative w-full xl:w-1/2 lg:w-full px-8 ml-2 sm:ml-32 lg:ml-2'>
@@ -13,6 +16,7 @@ const About = () => {
 							<img
 								src={aboutWomenPhoto}
 								alt='Women stay in office'
+								loading='lazy'
 								className='w-[470px] h-[516px] object-cover rounded-lg shadow-lg'
 							/>
 							<div className='absolute inset-0 bg-black opacity-10 rounded-lg w-[470px] h-full '></div>
@@ -20,6 +24,9 @@ const About = () => {
 						<div className='absolute left-0 bottom-[-50px] z-10'>
 							<img
 								src={aboutMenPhoto}
+								width={280}
+								height={295}
+								loading='lazy'
 								alt='Men stay in office'
 								className='w-[280px] lg:w[420] h-[295px] object-cover rounded-lg shadow-lg'
 							/>
