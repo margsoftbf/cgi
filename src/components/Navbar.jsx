@@ -100,7 +100,11 @@ const Navbar = () => {
 						<ul className='flex flex-col justify-center items-center h-full space-y-8 uppercase text-xl'>
 							<li>
 								<a
-									onClick={() => scrollToSection('home')}
+									href='#home'
+									onClick={() => {
+										scrollToSection('home');
+										setIsMobileMenuOpen(false);
+									}}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Home
@@ -108,7 +112,11 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									onClick={() => scrollToSection('about')}
+									href='#about'
+									onClick={() => {
+										scrollToSection('about');
+										setIsMobileMenuOpen(false);
+									}}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									O firmie
@@ -116,7 +124,11 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									onClick={() => scrollToSection('offers')}
+									href='#offers'
+									onClick={() => {
+										scrollToSection('offers');
+										setIsMobileMenuOpen(false);
+									}}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Oferta
@@ -124,7 +136,11 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
-									onClick={() => scrollToSection('contact')}
+									href='#contact'
+									onClick={() => {
+										scrollToSection('contact');
+										setIsMobileMenuOpen(false);
+									}}
 									className='text-darkGray hover:text-primary transition-all duration-300'
 								>
 									Kontakt
@@ -137,6 +153,7 @@ const Navbar = () => {
 						<ul className='flex space-x-10 uppercase text-base font-semibold tracking-wider'>
 							<li>
 								<a
+									href='#home'
 									onClick={() => scrollToSection('home')}
 									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
@@ -145,6 +162,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
+									href='#about'
 									onClick={() => scrollToSection('about')}
 									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
@@ -153,6 +171,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
+									href='#offers'
 									onClick={() => scrollToSection('offers')}
 									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
@@ -161,6 +180,7 @@ const Navbar = () => {
 							</li>
 							<li>
 								<a
+									href='#contact'
 									onClick={() => scrollToSection('contact')}
 									className='text-darkGray hover:text-primary transition-all duration-300 relative before:content-[""] before:absolute before:w-0 before:h-[2px] before:-bottom-1 before:left-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full cursor-pointer'
 								>
