@@ -7,6 +7,7 @@ import LogoSlider from './components/Slider';
 import Offers from './components/Offers';
 import TrustedBy from './components/TrustedBy';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<TrustedBy />
 			<Offers />
 			<Contact />
+			<Footer />
 		</>
 	);
 }
