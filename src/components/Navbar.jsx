@@ -36,7 +36,7 @@ const Navbar = () => {
 			<nav className='border-gray-200 py-2'>
 				<div className='flex flex-wrap justify-between items-center px-6 mx-auto max-w-wrapper'>
 					<a href='index.html' className='flex items-center z-50'>
-						<img src={logo} className='w-full h-10 lg:h-12' alt='Logo' />
+						<img src={logo} className='w-full h-8 sm:h-10 lg:h-12' alt='Logo' />
 					</a>
 
 					<div className='flex items-center lg:order-2'>
