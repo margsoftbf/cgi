@@ -6,7 +6,7 @@ import OurAdvantages from './components/OurAdvantages';
 import Offers from './components/Offers';
 import LogoSlider from './components/Slider';
 import Offers2 from './components/Offers2';
-import TrustedBy from './components/trustedby';
+import TrustedBy from './components/TrustedBy';
 
 function App() {
 	return (
