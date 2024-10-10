@@ -3,10 +3,10 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import OurAdvantages from './components/OurAdvantages';
-import Offers from './components/Offers';
 import LogoSlider from './components/Slider';
-import Offers2 from './components/Offers2';
+import Offers from './components/Offers';
 import TrustedBy from './components/TrustedBy';
+import Contact from './components/Contact';
 
 function App() {
 	return (
@@ -17,8 +17,8 @@ function App() {
 			<LogoSlider />
 			<OurAdvantages />
 			<TrustedBy />
-			<Offers2 />
 			<Offers />
+			<Contact />
 		</>
 	);
 }
